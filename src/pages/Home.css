@@ -1,0 +1,281 @@
+.home {
+  min-height: 100vh;
+}
+
+/* HERO */
+
+.hero {
+  min-height: 620px;
+  padding: 80px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  background: linear-gradient(
+    135deg,
+    #f8fafc 0%,
+    #eef2ff 100%
+  );
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.05;
+  margin: 0;
+  color: #111827;
+}
+
+.hero h1 span {
+  color: #2563eb;
+}
+
+.hero p {
+  margin-top: 25px;
+  max-width: 560px;
+  font-size: 18px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 14px 22px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-secondary {
+  background: white;
+  color: #111827;
+  border: 1px solid #e5e7eb;
+}
+
+/* BOUTON HERO */
+
+.hero-buttons button {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+}
+
+.hero-circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 120px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+/* ADVANTAGES */
+
+.advantages {
+  padding: 35px 8%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.advantage {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.advantage-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #eff6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+}
+
+.advantage h3 {
+  margin: 0 0 5px;
+}
+
+.advantage p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* PRODUCTS */
+
+.products-section {
+  padding: 90px 8%;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.section-header span,
+.cta span {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #2563eb;
+}
+
+.section-header h2 {
+  font-size: 38px;
+  margin: 8px 0 0;
+}
+
+.section-header p {
+  max-width: 400px;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* CTA */
+
+.cta {
+  margin: 20px 8% 80px;
+  padding: 55px;
+  border-radius: 24px;
+  background: #111827;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.cta h2 {
+  font-size: 32px;
+  margin: 10px 0;
+}
+
+.cta p {
+  color: #cbd5e1;
+  max-width: 600px;
+}
+
+.cta a {
+  white-space: nowrap;
+  background: white;
+  color: #111827;
+  padding: 14px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* FOOTER */
+
+.footer {
+  padding: 60px 8%;
+  background: #f8fafc;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+}
+
+.footer strong {
+  font-size: 25px;
+}
+
+.footer p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+.footer h4 {
+  margin-top: 0;
+}
+
+.footer a {
+  display: block;
+  color: #64748b;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-visual {
+    min-width: auto;
+  }
+
+  .hero-circle {
+    width: 220px;
+    height: 220px;
+    font-size: 80px;
+  }
+
+  .advantages {
+    grid-template-columns: 1fr;
+  }
+
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 35px;
+  }
+
+  .footer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,145 @@
+.product-details-page {
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 50px 6%;
+}
+
+.product-details-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.details-back {
+  border: none;
+  background: transparent;
+  color: #475569;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 35px;
+}
+
+.details-back:hover {
+  color: #2563eb;
+}
+
+.product-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  background: white;
+  padding: 35px;
+  border-radius: 24px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.details-image {
+  position: relative;
+}
+
+.details-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 18px;
+  background: #f1f5f9;
+}
+
+.details-badge {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background: #111827;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.details-category {
+  color: #2563eb;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.details-content h1 {
+  font-size: 45px;
+  line-height: 1.1;
+  margin: 12px 0;
+  color: #111827;
+}
+
+.details-price {
+  font-size: 28px;
+  font-weight: 800;
+  color: #2563eb;
+  margin: 20px 0;
+}
+
+.details-description {
+  color: #64748b;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+.details-info {
+  margin: 30px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+.details-info div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 15px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.details-info strong {
+  color: #111827;
+}
+
+.details-info span {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.details-order-button {
+  width: 100%;
+  border: none;
+  background: #2563eb;
+  color: white;
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.details-order-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 800px) {
+  .product-details-page {
+    padding: 35px 5%;
+  }
+
+  .product-details {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 30px;
+  }
+
+  .details-image img {
+    height: 350px;
+  }
+
+  .details-content h1 {
+    font-size: 34px;
+  }
+}
